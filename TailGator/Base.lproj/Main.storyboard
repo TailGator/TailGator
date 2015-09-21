@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FSi-m6-2fY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Main View-->
+        <scene sceneID="tjx-fp-eVW">
+            <objects>
+                <tableViewController id="wAH-ZU-6PP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Main View" id="ly3-fA-LcZ">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="AsB-OJ-A7o">
+                            <connections>
+                                <segue destination="mOd-Rk-Bgx" kind="push" id="x8s-jm-65V"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xgK-Dp-mco" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="506"/>
+        </scene>
+        <!--This is the Profile View-->
+        <scene sceneID="tym-pc-RgX">
+            <objects>
+                <viewController id="mOd-Rk-Bgx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B1j-TZ-84Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ogk-wp-HcI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Tx-Bp-F1i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="This is the Profile View" id="L50-kv-0nt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iND-YN-MqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="-251"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v7f-u6-d2j">
+            <objects>
+                <navigationController id="FSi-m6-2fY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vaa-QM-IkX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wAH-ZU-6PP" kind="relationship" relationship="rootViewController" id="xHg-Cc-kEp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXL-vd-MTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="506"/>
+        </scene>
+    </scenes>
+</document>
